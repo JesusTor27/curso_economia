@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 6-7</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 25px;">La estructura temporal de los tipos de interés (ETTI) (I) y (II)</h1>
+        <a href="../index.html">Ir atrás</a>
+    </header>
+    <div class="container">
+
+        <div class="clase">
+            <h2>Tipos de Interés y Plazo: Presentación y Tipos Spot y Forward</h2>
+
+            <p>La relación entre los tipos de interés y el plazo de un instrumento financiero es crucial para entender
+                la valoración y el rendimiento de las inversiones, especialmente en el mercado de bonos. Los tipos de
+                interés spot representan el costo actual de tomar un préstamo por un plazo específico, mientras que los
+                tipos de interés forward indican el costo acordado hoy para un préstamo que se iniciará en el futuro.
+                Estos conceptos son esenciales para la planificación financiera y la gestión de riesgos, ya que permiten
+                a los inversores y prestatarios fijar los costos de financiamiento ante cambios futuros en las tasas de
+                interés. Los tipos spot y forward forman la base para construir la ETTI, que es una representación de
+                cómo el mercado percibe el valor del tiempo y el riesgo a lo largo de diferentes períodos.</p>
+        </div>
+
+        <div class="clase">
+            <h2>Estructura Temporal de los Tipos de Interés (ETTI)</h2>
+
+            <p>La ETTI describe cómo varían los tipos de interés con diferentes plazos. Es fundamental para comprender
+                cómo los inversores valoran el riesgo y el retorno en diferentes horizontes temporales. La curva de
+                rendimientos, que es una representación gráfica de la ETTI, puede mostrar diferentes formas dependiendo
+                de las expectativas del mercado sobre la economía futura, la política monetaria y otros factores
+                macroeconómicos. La ETTI influye directamente en la valoración de bonos y otros instrumentos de deuda,
+                afectando tanto a inversores como a emisores.</p>
+
+        </div>
+
+        <div class="clase">
+            <h2>Teorías sobre la ETTI: ¿Por qué difieren los tipos de interés de distintos plazos?</h2>
+
+            <p>Diferentes teorías intentan explicar las variaciones en la ETTI. La Teoría de las Expectativas sugiere
+                que la curva de rendimientos refleja las expectativas colectivas del mercado sobre los futuros tipos de
+                interés. Por otro lado, la Teoría de la Preferencia por la Liquidez propone que los inversores demandan
+                una prima adicional por invertir en bonos de largo plazo debido al riesgo adicional y la menor liquidez
+                comparada con los instrumentos de corto plazo. Finalmente, la Teoría de la Segmentación de Mercados
+                argumenta que los mercados de diferentes plazos operan de forma independiente sin influencia
+                significativa entre sí, lo que puede llevar a discrepancias en los tipos de interés observados en
+                diferentes segmentos del mercado.</p>
+
+        </div>
+
+        <div class="clase">
+            <h2>Cálculo de la ETTI en la Práctica</h2>
+
+            <p>El cálculo práctico de la ETTI involucra determinar los tipos de interés spot a partir de precios de
+                mercado de bonos, especialmente bonos cupón cero. Estos tipos son esenciales para valorar correctamente
+                bonos y otros productos financieros. Los tipos spot obtenidos de esta manera reflejan las rentabilidades
+                exigidas por el mercado para diferentes plazos, proporcionando una base sólida para la toma de
+                decisiones de inversión y financiamiento.</p>
+
+        </div>
+
+        <div class="clase">
+
+            <h2>Información de los Movimientos de la ETTI</h2>
+
+            <p>Los cambios en la ETTI proporcionan información valiosa sobre las condiciones del mercado y las
+                expectativas futuras. Por ejemplo, una pendiente ascendente de la curva puede indicar expectativas de
+                crecimiento económico o aumento de la inflación, mientras que una curva invertida podría ser indicativa
+                de una recesión inminente. Comprender estos movimientos es crucial para los formuladores de políticas,
+                los analistas financieros y los inversores para anticipar y reaccionar ante cambios en el entorno
+                económico.</p>
+
+        </div>
+
+        <div class="clase">
+            <h2>Valoración de Bonos bajo la ETTI</h2>
+
+            <p>La valoración de bonos en un entorno donde los tipos de interés varían con el plazo requiere un enfoque
+                detallado que tenga en cuenta la ETTI. Los bonos deben valorarse usando los tipos de interés spot
+                adecuados para cada uno de sus flujos de caja futuros. Esto garantiza que la valoración sea precisa y
+                refleje el verdadero costo de financiamiento a lo largo del tiempo del bono.</p>
+
+        </div>
+
+        <div class="clase">
+            <h1>Sección 7: La estructura temporal de los tipos de interés (ETTI) (II)</h1>
+
+            <h2>Cálculo de la ETTI en la Práctica</h2>
+
+            <p>La Estructura Temporal de los Tipos de Interés (ETTI), también conocida como la curva de rendimientos, es
+                un componente crucial para entender cómo se valoran los bonos y otros instrumentos de deuda en función
+                de sus plazos de vencimiento. El cálculo práctico de la ETTI implica determinar los tipos de interés
+                spot (para inversiones a plazo único sin reinversión de intereses) a partir de los precios de mercado de
+                bonos, especialmente bonos cupón cero, que no pagan cupones periódicos y cuyo retorno al vencimiento
+                representa su rendimiento total.</p>
+
+            <p>En la práctica, el cálculo de la ETTI requiere una serie de pasos meticulosos. Primero, se recopilan los
+                precios de mercado de una variedad de instrumentos de deuda, incluidos bonos del gobierno y corporativos
+                con diferentes fechas de vencimiento. Luego, se usa una técnica de interpolación o bootstrapping para
+                estimar los rendimientos a diferentes plazos. Este proceso implica resolver una serie de ecuaciones que
+                hacen coincidir el precio de mercado de cada bono con el valor presente de sus flujos de caja futuros,
+                descontados a la tasa spot correspondiente a su vencimiento.</p>
+
+            <p>Además, es común emplear métodos estadísticos y matemáticos avanzados para suavizar la curva de
+                rendimientos y garantizar que sea funcional y representativa de las expectativas del mercado. Estos
+                modelos pueden incluir ajustes por factores macroeconómicos, políticas monetarias y otros indicadores de
+                mercado que influyen en las tasas de interés a lo largo del tiempo.</p>
+
+            <h2>Información de los Movimientos de la ETTI</h2>
+
+            <p>Los cambios en la ETTI pueden proporcionar información valiosa sobre las expectativas del mercado
+                respecto a las futuras políticas monetarias, la inflación y las condiciones económicas generales. Una
+                curva de rendimientos en ascenso (donde las tasas a largo plazo son más altas que las de corto plazo)
+                generalmente indica que los inversionistas esperan un crecimiento económico robusto y posiblemente una
+                inflación más alta en el futuro. Por otro lado, una curva de rendimientos invertida (donde las tasas a
+                corto plazo son más altas que las de largo plazo) puede ser un indicador de recesión futura, reflejando
+                expectativas de una economía en desaceleración y de disminución de la inflación.</p>
+
+            <p>Los analistas y economistas examinan cuidadosamente estos movimientos para ajustar sus estrategias de
+                inversión y sus predicciones macroeconómicas. La interpretación de los cambios en la ETTI también es
+                crucial para los bancos centrales, que pueden ajustar sus políticas de tasas de interés en respuesta a
+                las señales enviadas por la curva de rendimientos. Además, los movimientos en la ETTI afectan
+                directamente a la valoración de una amplia gama de activos financieros, incluidos bonos, préstamos y
+                derivados.</p>
+
+            <h2>Valoración de Bonos bajo la ETTI</h2>
+
+            <p>La valoración de bonos utilizando la ETTI implica descontar los flujos de caja futuros del bono (pagos de
+                cupones y el valor nominal) a las tasas de interés spot correspondientes a sus respectivos plazos. Este
+                enfoque asegura que se tenga en cuenta la estructura temporal del interés y proporciona una valoración
+                más precisa y ajustada al riesgo del bono.</p>
+
+            <p>El valor de un bono se ve afectado por la forma de la curva de rendimientos. Por ejemplo, bajo una curva
+                de rendimientos normal, los bonos a largo plazo tendrán rendimientos más altos y, por lo tanto, precios
+                más bajos, comparados con los bonos a corto plazo, dado un mismo valor nominal y tasa de cupón. Por otro
+                lado, si la curva está invertida, los bonos a corto plazo podrían venderse a precios más bajos
+                (rendimientos más altos) que los bonos a largo plazo.</p>
+
+            <p>Al aplicar la ETTI para la valoración de bonos, los inversionistas y gestores de fondos pueden hacer
+                comparaciones más informadas entre diferentes bonos y elegir aquellos que ofrezcan el mejor retorno
+                ajustado por riesgo, en función de sus horizontes de inversión y perfiles de riesgo.</p>
+
+
+        </div>
+
+        <div class="clase">
+            <h2>Ejercicio</h2>
+
+            <p>El tipo de interés a un año al contado es i1=5.35%. Los tipos forward de préstamos a un año
+                con vencimiento en el año 2, 3, 4 y 5 son, respectivamente, 5.25%, 5.40%, 5.3% y 5.4%. ¿Cuáles
+                son los tipos al contado (“spot”) i2, i3, i4 y i5? Si la hipótesis de las expectativas se cumple, ¿qué
+                puedes decir sobre los tipos de interés futuros esperados?
+            </p>
+
+            <h2>Solución</h2>
+
+            <p>Si tenemos el tipo spot a un año (5.35%) y los tipos forward de préstamos a un año con
+                vencimiento en los años 2 (f^1_2), 3 (f^1_3), 4 (f^1_4) y 5 (f^1_5), podemos construir los tipos spot a 2, 3, 4 y 5 años de la siguiente manera (recursiva):
+            </p>
+
+           <ul>
+                <li>(1+i_1) × (1+f^1_2) = (1+i_2)^2 (1.0535) × (1.0525) =(1+i_2)^2 => i_2 = 5.30%</li>
+                <li>(1+i2)^2 × (1+f^1_3)  = (1+i_3)^3 => (1.053)^2 × (1.054) = (1+i3)^3 => i_3 = 5.33%</li>
+                <li>(1+i3)^3 × (1+f^1_4) = (1+i4)^4 => (1.0533)^3 × (1.053) = (1+i4)^4 => i_4 = 5.32%</li>
+                <li>(1+i4)^4 × (1+f^1_5) = (1+i5)^5 => (1.0532)^4 4 × (1.054) = (1+i5)^5 => i5 = 5.34%</li>
+            </ul>
+
+            <p>Si la hipótesis de las expectativas se cumple, los tipos de interés futuros esperados son
+                prácticamente iguales que los actuales. Esto nos da lugar a una curva de tipos plana, que, bajo la
+                hipótesis de las expectativas, estaría diciendo que las condiciones económicas futuras se ven
+                relativamente similares a las actuales.</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

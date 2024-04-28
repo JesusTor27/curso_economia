@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 2</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 25px;">El valor del dinero en el tiempo y la ecuacion básica</h1>
+        <a href="../index.html">Ir atrás</a>
+    </header>
+
+    <div class="container">
+
+        <div class="clase">
+            <h3>El valor del dinero en el tiempo</h3>
+            <ul>
+                <li>Vimos en la anterior sesión que las decisiones financieras tienen dos componentes comunes:
+                    <ol>
+                        <li>Tienen implicaciones que se extienden durante varios periodos de tiempo</li>
+                        <li>El concepto de rentabilidad está siempre presente: el uso de fondos en un empleo determinado
+                            siempre implica renunciar a una ganancia (en el mejor empleo alternativo: un coste de
+                            oportunidad).</li>
+                    </ol>
+                </li>
+                <li>Estos dos componentes nos llevan a considerar el principal concepto del análisis financiero: el
+                    valor del dinero en el tiempo.</li>
+                <li>No es lo mismo recibir un dólar hoy que un dólar dentro de un año; un dólar hoy es más valioso: lo
+                    normal es que puedas invertir el dólar y al cabo de un año tener ese dólar más lo que hayas ganado
+                    al invertirlo (una rentabilidad).</li>
+                <li>Por ello, generalmente un dólar hoy equivale a más de un dólar dentro de un año. ¿Cuánta cantidad
+                    nos tendrían que dar dentro de un año para estar dispuestos a renunciar a un dólar hoy?</li>
+                <li>La respuesta a esta pregunta depende de la disponibilidad que tengamos de invertir ese dólar hoy y
+                    obtener una rentabilidad futura.</li>
+            </ul>
+            <p>Imaginemos que podemos invertir el dinero y ganar un 10% anual. Un dólar invertido a este tipo de interés
+                se convertiría en 1$ × (1+10%) = $1.1 dentro de un año.</p>
+            <p>Por lo tanto, para nosotros tener $1.1 dentro de un año sí sería equivalente a tener un dólar hoy. Y la
+                clave de esta comparación de valores en el tiempo es, precisamente, la rentabilidad potencial que
+                podemos obtener, ese 10%.</p>
+            <p>Podemos entender esta equivalencia también al revés: si necesitas $1 hoy (para consumir) puedes pedirlo
+                prestado, pero entonces tendrás que devolver $1.1 dentro de un año.</p>
+            <p>Por supuesto, si vamos más allá de un año la conclusión es la misma: $1 invertido hoy al 10% generaría $1
+                × (1+10%)2 = $1.21 dentro de dos años, y por lo tanto esos dos valores deberían ser equivalentes para
+                nosotros.</p>
+            <p>En general, una cantidad C hoy es equivalente a C × (1+i) dentro de T años (a esto lo llamamos componer C
+                para hallar su valor futuro) y, al revés, una cantidad C dentro de T años es equivalente a C/(1+i) hoy
+                (a esto lo llamamos actualizar o descontar el flujo de caja C, para hallar su valor actual o
+                descontado).</p>
+            <p>Practiquemos un poco. Si el tipo de interés es del 5%, ¿cuál es la cantidad equivalente a $200 hoy dentro
+                de un año? ¿Y dentro de tres años? ¿Y dentro de cinco?</p>
+            <ul>
+                <li>El equivalente a $200 hoy dentro de un año será: C año = $200 × (1.05) = $210</li>
+                <li>El equivalente a $200 hoy dentro de tres años será: C3 años = $200 × (1.05)^3 = $231.525</li>
+                <li>El equivalente a $200 hoy dentro de cinco años será: C5 años = $200 × (1.05)^5 = $255.26</li>
+            </ul>
+            <p>La clave para entender el valor del dinero en el tiempo y, por lo tanto, para poder comparar y poner en
+                medidas equivalentes, cantidades que se reciben/pagan en distintos periodos es</p>
+            <blockquote>La rentabilidad a la que renunciamos en un uso alternativo comparable</blockquote>
+            <p>Este concepto (equivalente al concepto económico de un coste de oportunidad) será el centro del análisis
+                del valor de cualquier activo / inversión.</p>
+        </div>
+
+        <div class="clase">
+            <h3>Las consecuencias de una decisión financiera</h3>
+            <p>Cualquier decisión financiera implica consecuencias de efectivo (a partir de ahora usaremos el término
+                cash-flow para hablar de cualquier movimiento de efectivo) que suceden a lo largo de diversos periodos:
+            </p>
+            <ul>
+                <li>Si pedimos un préstamo bancario, obtenemos HOY el dinero (cash-flow positivo) pero tendremos que ir
+                    pagando al banco periódicamente (cash-flows negativos) para devolver el préstamo.</li>
+                <li>Si invertimos en un bono, pagamos HOY su precio (cash-flow negativo) pero recibiremos los cupones
+                    del bono y el valor del bono a lo largo de la vida del bono (cash-flows positivos).</li>
+                <li>Una empresa paga hoy por inversiones necesarias para un proyecto (cash-flow negativo) pero a cambio
+                    recibirá los cash-flows positivos que el proyecto generará en el futuro.</li>
+            </ul>
+        </div>
+
+        <div class="clase">
+            <h3>Perfiles de cash-flows</h3>
+            <ul>
+                <li>Un perfil o secuencia de cash-flows representa la forma en que un activo producirá cash-flows a lo
+                    largo de su vida.</li>
+                <li>Es una manera gráfica de mostrar cuánto dinero genera el activo en cada periodo: estos flujos de
+                    caja pueden ser positivos (recibes dinero) o negativos (pagas dinero).</li>
+                <li>La distribución temporal de los flujos de caja es muy importante: el dinero tiene un valor en el
+                    tiempo, por lo que no es lo mismo recibir los flujos de caja dentro de un año que dentro de cien
+                    años.</li>
+            </ul>
+
+        </div>
+
+        <div class="clase">
+            <h3>La ecuación básica de valoración</h3>
+            <p>Este valor VA es el precio (máximo) que pagaríamos por el activo hoy y, por lo tanto, representa una
+                valoración del activo "correcta", en el sentido de que suma correctamente los valores de los cash-flows
+                que el activo te da derecho a percibir, ya que utiliza el tipo de interés para descontar (y, por lo
+                tanto, homogeneizar) los cash-flows de distintos periodos.</p>
+            <p>Esta es la ecuación básica de valoración: todo el análisis de economía financiera se centra en esta
+                ecuación, ya que toda decisión financiera se puede expresar en función de sus consecuencias en términos
+                de cash-flows.</p>
+            <p>Por ejemplo, el siguiente activo (muy general):</p>
+            <img src="../img/ecua_valor_basica.png" alt="Ecuación de valor básica" width="190px">
+            <p>Tendría un valor de:</p>
+            <img src="../img/ecua_2.png" alt="Valor del activo">
+        </div>
+
+        <div class="clase">
+            <h3>La ecuación básica de valoración y el VAN</h3>
+            <p>El concepto de Valor Actual Neto (VAN) es un componente importante del análisis financiero: por ejemplo,
+                las finanzas corporativas se basan fundamentalmente en la aplicación de este concepto a los proyectos de
+                inversión.</p>
+            <p>Nosotros vamos a definir ahora el concepto, y en la siguiente sesión lo utilizaremos para hablar de los
+                mercados competitivos de activos financieros y de las diferencias entre inversión en activos financieros
+                e inversión en proyectos productivos.</p>
+            <p>Imaginemos que estamos analizando el valor de un activo que cotiza en un mercado financiero, con lo que
+                podemos observar el precio al que podríamos adquirir el activo.</p>
+            <p>Vamos a llamar a ese precio CFo: si compráramos hoy el activo, pagaríamos su precio, con lo que
+                tendríamos un cash-flow (negativo) en el momento actual (momento "cero").</p>
+            <p>Si incluimos este primer pago dentro de la secuencia de cash-flows del activo, aplicando la fórmula de
+                valoración tendríamos una estimación del valor actual del activo neto (descontado) del precio de
+                adquisición.</p>
+            <p>Así, podemos definir el VAN de la compra de un activo como:</p>
+            <img src="../img/ecua_3.png" alt="Ecuación del VAN">
+            <p>Donde la única diferencia con la ecuación básica es que ahora incluimos el precio del activo (CFo, que
+                será negativo) como parte de la ecuación.</p>
+
+        </div>
+
+        <div class="clase">
+
+            <h2>Ejercicios</h2>
+            <ol>
+                <li>
+                    <p>Valora el siguiente “activo”, sabiendo que el tipo de interés es del 8%:</p>
+                    <img src="../img/grafico_1.png" alt="Gráfica 1">
+                    <p>Solución:</p>
+                    <img src="../img/grafico_2.png" alt="Gráfica 2">
+                </li>
+                <li>
+                    <p>Valora el siguiente “activo”, sabiendo que el tipo de interés es del 10%:</p>
+                    <img src="../img/grafico_3.png" alt="Gráfica 3">
+                    <p>Solución:</p>
+                    <img src="../img/grafico_4.png" alt="Gráfica 4">
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
